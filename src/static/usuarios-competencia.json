@@ -1,0 +1,33 @@
+{
+    "list": [
+        {
+            "employeeId": "078F9FAA1DED43EC8C5BB6BFA8F8195C",
+            "name": "Jorge Issamu Hamaguchi",
+            "username": "jorge.issamu.hamaguchi",
+            "linkPhoto": "https://senior-hcm-storage.s3.amazonaws.com/senior_sistemas/attachment/5BFEF714DA0B46338554C4B985808BE5/person-photo/2CCEB2F78BB640E08D298ACD61DBEEF1?AWSAccessKeyId=AKIAJDD4J3VVK2PXOQAQ&Expires=1516994442&Signature=8wv3fPDR3bFVp3mFGsfXCkStFY8%3D",
+            "email": "jorge.hamaguchi@senior.com.br",
+            "jobPosition": "Programador de Sistemas",
+            "department": "Desenvolvimento",
+            "workstationId": "C8544FBA69FC421A91392163B212B7C9",
+            "highlights": [
+                "Japonês"
+            ],
+            "successor": false
+        },
+        {
+            "employeeId": "1D51C680C1034424A1A4903875178A01",
+            "name": "Jean Christian Dos Santos",
+            "username": "jean.christian.dos.santos",
+            "linkPhoto": "https://senior-hcm-storage.s3.amazonaws.com/senior_sistemas/attachment/230E2A527BDC4A8482F8C82BE7F05FB4/EE459357C0A641F39D697AEF80014271_20161123101149?AWSAccessKeyId=AKIAJDD4J3VVK2PXOQAQ&Expires=1516994442&Signature=oVaztlpAPa8ypVZSXQbUvJ6SOsQ%3D",
+            "email": "jean.santos@senior.com.br",
+            "jobPosition": "Técnico de Suporte TI",
+            "department": "TSIC",
+            "workstationId": "2740EE1D80E34E7186CFA540D835ADE3",
+            "highlights": [
+                "Japonês"
+            ],
+            "successor": false
+        }
+    ],
+    "isMoreItemsAvailable": false
+}

@@ -1,0 +1,29 @@
+{
+	"url": "https://d3tfg7xzbvvd1u.cloudfront.net/",
+	"landpage":"#/",
+	"iframes": {
+		"items": [
+			{
+				"id": "Busca por competência"
+			}
+		]
+	},
+	"menu": {
+		"children": [{
+			"label": "Busca por competência",
+			"children": [{
+				"label": "Busca pessoas",
+				"children": [
+					{
+						"label": "Localizador",
+						"path": {
+							"withCredentials": true,
+							"category": "iframe",
+							"menuId": "https://d3tfg7xzbvvd1u.cloudfront.net/"
+						}
+					}
+				]				
+			}]
+		}]
+	}
+}

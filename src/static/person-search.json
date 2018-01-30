@@ -1,0 +1,32 @@
+[
+    {
+      "id": 10,
+      "name": "John Mirolha",
+      "mandatoryDocuments": [
+        {
+          "id": 1,
+          "documentType": {
+            "id": 1,
+            "name": "string",
+            "label": "string",
+            "mask": "string",
+            "required": true,
+            "documentToREP": true
+          },
+          "document": "string"
+        }
+      ],
+      "preferentialPhone": {
+        "id": 0,
+        "preferential": true,
+        "ddi": 0,
+        "phoneNumber": "string",
+        "extensionLine": "string"
+      },
+      "preferentialEmail": {
+        "id": 0,
+        "preferential": true,
+        "emailAddress": "oemail@docara.com.br"
+      }
+    }
+  ]

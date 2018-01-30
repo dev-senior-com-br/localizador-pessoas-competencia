@@ -1,0 +1,32 @@
+<p-panel styleClass="form-group">
+    <p-header>
+        <span>Localizador de pessoas</span>
+    </p-header>
+
+    <div class="ui-fluid">
+        <div class="ui-g ui-inputgroup">
+            <div class="ui-g-12 form-group">
+                <div class="ui-inputgroup">
+                    <input type="text" pInputText placeholder="Digite o nome, sobrenome ou uma competência" [(ngModel)]="searchText" (keyup.enter)="search()" >
+                    <button pButton label="Pesquisar" styleClass="ui-button-info" (click)="search()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <p-dataTable [value]="listaUsuariosCompetencia" [lazy]="false" scrollable="true" resizableColumns="true" sortMode="multiple"
+                    reorderableColumns="true" [rows]="gridRows" [paginator]="false" [loading]="isDataLoading()">
+                    <p-column field="name" header="Nome" [sortable]="true" [style]="{'width':'30%'}"></p-column>
+                    <p-column field="jobPosition" header="Cargo" [sortable]="true" [style]="{'width':'25%'}"></p-column>
+                    <p-column field="department" header="Departamento" [sortable]="true" [style]="{'width':'15%'}"></p-column>
+                    <p-column field="ultimoLocal" header="Ultimo local" [sortable]="true" [style]="{'width':'30%'}">
+                        <ng-template let-col let-user="rowData" pTemplate="body">
+                            <span class="fa fa-spin fa-2x fa-circle-o-notch" style="font-size: large;" *ngIf="!user.ultimoLocal"></span>{{user.ultimoLocal}}
+                        </ng-template>
+                    </p-column>
+                </p-dataTable>
+            </div>
+        </div>
+    </div>
+</p-panel>
+
