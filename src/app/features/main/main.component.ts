@@ -42,19 +42,19 @@ export class MainComponent {
                 this.listaUsuariosCompetencia.map(usuCompetencia =>{
                     this.localizadorService
                     .searchPersonAPI(usuCompetencia.name)
-                    .subscribe(searchedPersons => {
-                        console.log(searchedPersons);
-                        if (!searchedPersons || searchedPersons.length == 0){
+                    .subscribe(personsFound => {
+                        console.log(personsFound);
+                        if (!personsFound || personsFound.length == 0){
                             usuCompetencia.ultimoLocal = "Sem informação de local"
                             return
                         }
                         this.localizadorService
-                        .getPersonApi(searchedPersons[0].id)
+                        .getPersonApi(personsFound[0].id)
                         .subscribe(person =>{
-                            if(!person.lastAccessDate){
+                            if(!person.currentPhysicalLocation){
                                 usuCompetencia.ultimoLocal = "Sem informação de local"
                             }else{
-                                usuCompetencia.ultimoLocal = person.lastAccessDate;
+                                usuCompetencia.ultimoLocal = person.currentPhysicalLocation.name;
                             }
                         })
                     });
